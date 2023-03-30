@@ -1,0 +1,85 @@
+.recipe__details {
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  padding: 4rem 0 0rem 8rem;
+}
+
+.recipe__details svg {
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: #f38e82;
+}
+
+.recipe__info {
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.recipe__info {
+  margin-right: 4.5rem;
+}
+
+.recipe__info-icon {
+  margin-right: 1.15rem;
+}
+
+.recipe__info-data {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.recipe__info-buttons {
+  display: flex;
+  margin-left: 1.6rem;
+}
+.recipe__info-buttons button {
+  transition: margin-bottom 0.2s ease-in-out;
+  margin: 1.5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.recipe__info-buttons button:hover {
+  margin-bottom: 0.4rem;
+}
+
+.bookmark-btn {
+  position: relative;
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+  border-radius: 50%;
+  border: none;
+  height: 4.5rem;
+  width: 4.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 6rem;
+  padding: 1rem;
+}
+
+.recipe__user-generated {
+  background-color: #eeeae8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 10rem;
+
+  margin-left: 15rem;
+}
+
+.bookmark-btn svg {
+  fill: white;
+}
+
+.bookmark-btn:hover {
+  width: 4.7rem;
+  height: 4.7rem;
+}

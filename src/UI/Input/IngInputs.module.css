@@ -1,0 +1,31 @@
+.ingredient-label {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.ingredient-inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.ingredient-inputs input {
+  margin: 0.3rem 0 0.63rem 0;
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.ingredient-inputs input::placeholder {
+  color: #d3c7c3;
+}
+
+.ingredient-inputs input:focus {
+  outline: none;
+  border: 1px solid #f38e82;
+  background-color: #f9f5f3;
+}

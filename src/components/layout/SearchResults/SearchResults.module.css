@@ -1,0 +1,31 @@
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  padding: 0 5rem;
+  margin-top: auto;
+  
+}
+
+/* .pagination__btn--prev {
+  float: left;
+}
+.btn--next {
+  float: right;
+} */
+
+
+.pagination::after {
+  content: "";
+  display: table;
+  clear: both;
+}

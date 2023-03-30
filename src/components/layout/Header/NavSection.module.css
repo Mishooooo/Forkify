@@ -1,0 +1,47 @@
+.nav {
+  align-self: stretch;
+  margin-right: 2.5rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__btn {
+  height: 100%;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: #f38e82;
+  margin-right: 0.7rem;
+  transform: translateY(-1px);
+}
+
+.nav__btn:focus {
+  outline: none;
+}
+
+.nav__btn:hover {
+  background-color: #e9e8e8;
+
+}
