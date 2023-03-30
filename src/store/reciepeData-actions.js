@@ -12,7 +12,7 @@ export const fetchRecipes = function (mealName) {
     );
 
     const response = await fetch(
-      `https://forkify-api.herokuapp.com/api/v2/recipes?search=${mealName}&key=c6656192-badf-437e-8f97-69c0d1f7bdb8`
+      `https://forkify-api.herokuapp.com/api/v2/recipes?search=${mealName}&key=94e7eaa6-2222-469a-bcf1-421551585890`
     );
 
     if (!response.ok) {
@@ -41,7 +41,7 @@ export const fetchMealRecipe = function (id) {
     );
     try {
       const response = await fetch(
-        `https://forkify-api.herokuapp.com/api/v2/recipes/${id}?key=c6656192-badf-437e-8f97-69c0d1f7bdb8`
+        `https://forkify-api.herokuapp.com/api/v2/recipes/${id}?key=94e7eaa6-2222-469a-bcf1-421551585890`
       );
 
       if (!response.ok) {

@@ -46,7 +46,7 @@ const AddRecipeAction = async function ({ request }) {
     ingredients: ingredientArr,
   };
 
-  let url = `https://forkify-api.herokuapp.com/api/v2/recipes/?key=c6656192-badf-437e-8f97-69c0d1f7bdb8`;
+  let url = `https://forkify-api.herokuapp.com/api/v2/recipes/?key=94e7eaa6-2222-469a-bcf1-421551585890`;
 
   const response = await fetch(url, {
     method: "POST",
