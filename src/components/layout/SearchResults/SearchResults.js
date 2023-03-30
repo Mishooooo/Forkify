@@ -9,7 +9,7 @@ import RecipeList from "../../../UI/RecipeList/RecipeList";
 const SearchResults = function () {
   const recipesListData = useSelector((state) => state.recipesListData);
 
-  const itemsPerPage = 15;
+  const itemsPerPage = 12;
 
   const [currentPage, setCurrentPage] = useState(1);
 
