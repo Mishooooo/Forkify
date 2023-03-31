@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 import Spinner from "../../../UI/Spinner";
 import PagMessage from "../../../UI/Message/PagMessage";
 
-let isInitial = true;
+
 
 const Recipe = function () {
   const recipe = useSelector((recState) => recState.recipe);
@@ -18,14 +18,11 @@ const Recipe = function () {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (isInitial) {
-      isInitial = false;
-      return;
-    }
+   
     dispatch(fetchMealRecipe(params.mealId));
   }, [fetchMealRecipe, params.mealId]);
 
-  
+
   if (recipe.isLoading) {
     return (
       <div className={classes["recipe"]}>
