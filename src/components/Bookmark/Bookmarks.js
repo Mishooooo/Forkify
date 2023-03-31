@@ -1,9 +1,8 @@
 import styles from "./Bookmarks.module.css";
-import icons from "../../assets/icons.svg";
-
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import RecipeList from "../../UI/RecipeList/RecipeList";
+import PagMessage from "../../UI/Message/PagMessage";
 
 let isInitial = true;
 const Bookmarks = () => {
@@ -28,14 +27,10 @@ const Bookmarks = () => {
   ));
 
   const bookmarksNotFound = (
-    <div className={styles["message"]}>
-      <div>
-        <svg>
-          <use href={icons + "#icon-smile"}></use>
-        </svg>
-      </div>
-      <p>No bookmarks yet. Find a nice recipe and bookmark it</p>
-    </div>
+    <PagMessage
+      iconPoint={"#icon-smile"}
+      messageTxt={"No bookmarks yet. Find a nice recipe and bookmark it"}
+    />
   );
 
 

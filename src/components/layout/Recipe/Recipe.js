@@ -25,6 +25,16 @@ const Recipe = function () {
     dispatch(fetchMealRecipe(params.mealId));
   }, [fetchMealRecipe, params.mealId]);
 
+  
+  if (recipe.isLoading) {
+    return (
+      <div className={classes["recipe"]}>
+        <Spinner />
+      </div>
+    );
+  }
+
+
   if (recipe.message) {
     return (
       <div className={classes["recipe"]}>
@@ -35,13 +45,7 @@ const Recipe = function () {
       </div>
     );
   }
-  if (recipe.isLoading) {
-    return (
-      <div className={classes["recipe"]}>
-        <Spinner />
-      </div>
-    );
-  }
+
 
   return (
     <div className={classes["recipe"]}>

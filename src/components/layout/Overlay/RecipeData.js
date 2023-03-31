@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect,  useState } from "react";
 import classes from "./RecipeData.module.css";
 
 const RecipeData = function ({ errorData }) {

@@ -19,7 +19,7 @@ const AddRecipesOverlay = function () {
   const [wasFormSent, setWasFormSent] = useState(null); // initialize as null
 
   useEffect(() => {
-    if (navigation.state === "idle" && !actionData?.message) {
+    if (navigation.state === "idle" && actionData && !actionData.message) {
       // update state with a new element
       setWasFormSent((curState) =>
         curState ? (
