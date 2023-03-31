@@ -38,7 +38,7 @@ const SearchResults = function () {
 
   if (
     Array.isArray(recipesListData.recipesList) &&
-    recipesListData.recipesList?.length == 0
+    recipesListData.recipesList?.length === 0
   ) {
     return (
       <div className={styles["search-results"]}>

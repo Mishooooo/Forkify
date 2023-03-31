@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import mealRecipeSlice,  {bookmarkList, bookmarkListSlice, recipesSlice,  }from "./recipeData-slice";
+import mealRecipeSlice,  { bookmarkListSlice, recipesSlice,  }from "./recipeData-slice";
 
 
 
