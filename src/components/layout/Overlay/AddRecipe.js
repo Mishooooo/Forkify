@@ -35,7 +35,7 @@ const AddRecipesOverlay = function () {
   }, [navigation.state, actionData]);
 
   return (
-    <WindowOverlay routePath={typeof actionData === 'string' ? `${actionData}` : -1}>
+    <WindowOverlay routePath={typeof actionData === 'string' ? `/${actionData}` : -1}>
       {wasFormSent ? (
         wasFormSent
       ) : (
